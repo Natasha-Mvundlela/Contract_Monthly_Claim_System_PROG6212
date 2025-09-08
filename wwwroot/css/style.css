@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    min-height: 55vh;
+}
+
+/*nav style*/ 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d7e72;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+    .navigation a:hover {
+        color: #8cb9a0;
+    }
+
+.register {
+    margin: 3rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    align-items: normal;
+    background-color: white;
+    border-left: 14px solid #71c7b273;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #1c6e64e9;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/*claim style*/
+.claim {
+    margin: 0;
+    padding: 4rem;
+    max-width: 600px;
+    align-items: center;
+    background-color: white;
+    border: 6px solid #e7eeedf2;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    color: #1c6e64e9;
+}
+
+    .claim strong {
+        color: #8cb9a0;
+        font-weight: 600;
+    }
+
+    .claim em {
+        color: #1d7e72;
+        font-style: italic;
+    }
+
+    .claim a:hover {
+        text-decoration: underline;
+    }
+
+/* Button */
+button[type="submit claim"] {
+    width: 85%;
+    padding: 0.75rem;
+    background-color: #1c6e64e9;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button[type="submit claim"]:hover {
+        background-color: #71c7b273;
+    }
+
+/* Login Container */
+.login {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .login h2 {
+        color: #004080;
+        margin-bottom: 1rem;
+    }
+p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #555;
+}
+/* Form Elements */
+form label {
+    display: table-cell;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.73rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+/* Button */
+button[type="submit"] {
+    width: 40%;
+    padding: 0.75rem;
+    background-color: #1c6e64e9;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button[type="submit"]:hover {
+        background-color: #71c7b273;
+    }
+
+.login p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.login a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .login a:hover {
+        text-decoration: underline;
+    }
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .navigation a {
+            margin: 0.2rem 0;
+        }
+
+    .form-container {
+        margin: 1rem;
+        padding: 1.6rem;
+    }
+
+    .claim {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+}

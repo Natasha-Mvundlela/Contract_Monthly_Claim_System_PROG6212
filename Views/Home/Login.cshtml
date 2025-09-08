@@ -1,0 +1,43 @@
+﻿
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<div class="navigation">
+    <h3>Contract Monthly Claim System</h3>
+
+    <a href="@Url.Action("Index","Home")">Home</a>
+    <a href="@Url.Action("Claim","Home")">Claim</a>
+    <a href="@Url.Action("Status","Home")">Status</a>
+
+</div>
+
+<div class="login">
+
+    <h2>WELCOME!</h2><br/>
+     @model LoginViewModel
+
+        <form asp-action="Login" method="post">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="form-control" />
+
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+
+            <label asp-for="Role"></label>
+            <select asp-for="Role" class="form-control">
+                <option value="lecturer">Lecturer</option>
+                <option value="pc">Program Coordinator</option>
+                <option value="admin">Program Manager</option>
+            </select>
+            <br/>
+        <div class="form-section">
+            <form asp-action="Register" method="post">
+                <!-- form fields -->
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <p>Not registered? <a href="@Url.Action("Index","Home")">REGISTER</a> here</p>
+    </form>
+
+</div>

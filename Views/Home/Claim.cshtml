@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Claim";
+}
+
+<head>
+	<link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<div class="navigation">
+    <h3>Contract Monthly Claim System</h3>
+
+        <a href="@Url.Action("Index","Home")">Home</a>
+        <a href="@Url.Action("Claim","Home")">Claim</a>
+        <a href="@Url.Action("Status","Home")">Status</a>
+    
+</div>
+
+
+<div class="claim">
+
+<h1">Submit Your Monthly @ViewData["Title"]</h1>
+
+        @model ClaimViewModel
+
+ <form asp-action="Claim" method="post">
+            <label asp-for="Username">Username</label>
+            <input asp-for="Username" class="form-control" />
+            <br/>
+            <label asp-for="ClaimDate">Claim Date</label>
+            <input asp-for="ClaimDate" type="date" class="form-control" />
+            <br/>
+            <label asp-for="module">Module</label>
+            <select asp-for="Module" class="form-control">
+				<option value="Module1">PROGRAMMING</option>
+				<option value="Module2">DATABASE</option>
+				<option value="Module3">INFORMATION SECURITY</option>
+				<option value="Module4">WEB DEVELOPMENT</option>
+            </select>
+			<br />
+			<label asp-for="Period">Period (Month/Year)</label>
+			<input asp-for="Period" type="month" class="form-control" />
+			<br />
+            <label asp-for="Rate">Hour per rate</label>
+            <input asp-for="Rate" type="number" class="form-control" />
+            <br/>
+            <label asp-for="HoursWorked">Hours worked</label>
+            <input asp-for="HoursWorked" type="number" class="form-control" />
+            <br />
+            <label asp-for="Description">Description of work</label>
+            <input asp-for="Description" class="description" />
+			<br /><br /><br/>
+            <label asp-for="file">Supporting documents</label>
+            <input type="file" id="uploadFile" accept="*" />
+            <br /><br/>
+            <div class="form-section">
+                <form asp-action="Register" method="post">
+                    <!-- form fields -->
+                    <button type="submit">Submit Claim</button>
+                </form>
+            </div>
+</form>
+
+</div>
