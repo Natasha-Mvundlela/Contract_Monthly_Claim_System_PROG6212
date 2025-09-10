@@ -15,7 +15,6 @@ The Contract Monthly Claim System (CMCS) is a comprehensive web-based applicatio
   - Description of work performed
 - **Document Management**: Easy upload of supporting documents
 - **Status Tracking**: Transparent tracking of claim status throughout approval process
-- **Dashboard**: Personal dashboard with claim history and statistics
 
 ### For Programme Coordinators & Academic Managers
 - **Claim Verification**: Streamlined interface for reviewing submitted claims
@@ -25,9 +24,9 @@ The Contract Monthly Claim System (CMCS) is a comprehensive web-based applicatio
 
 ## Technology Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript
+- **Frontend**: HTML5, CSS3
 - **Backend**: ASP.NET Core MVC
-- **Styling**: Custom CSS with Poppins font family
+- **Styling**: Custom CSS 
 - **Responsive Design**: Mobile-first approach with adaptive layouts
 
 ## System Requirements
@@ -46,19 +45,9 @@ The Contract Monthly Claim System (CMCS) is a comprehensive web-based applicatio
 4. **Upload Documents**: Attach supporting documents for your claim
 5. **Track Status**: Monitor your claim's progress through the approval workflow
 
-### For Administrators
+### For Programme coodinator/Acadeimic manager
 
 1. **Login**: Use your administrator credentials
 2. **Review Claims**: Access the approval dashboard to review pending claims
 3. **Verify Information**: Check claim details and supporting documents
 4. **Approve/Reject**: Make decisions on claims with appropriate comments
-5. **Generate Reports**: Access reporting features for institutional analytics
-
-## License
-
-This software is developed for educational purposes as part of the PROG6212 module.
-
-
----
-
-*This system is part of the Portfolio of Evidence (POE) for PROG6212, focusing on practical application of C# GUI development in a real-world scenario.*
